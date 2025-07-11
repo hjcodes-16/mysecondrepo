@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+        background-color:whitesmoke;
+    }
+    h1 {
+        background-color:bisque;
+        color: black;
+        font-family:'Times New Roman', Times, serif;
+        text-align: center;
+        height: 100px; 
+        line-height: 100px;
+    }
+    ul {
+        background-color: bisque;
+        list-style-type: none;
+        height: 50px;
+        line-height: 50px;
+    }
+    li {
+            display: inline-block;
+            margin-left: 10px;
+        }
+        a {
+            color:black;
+            text-decoration: none;
+        }
+     #place {
+        background-color: whitesmoke;
+        color: black;
+        font-size: 30px;
+    }
+    </style>
+</head>
+<body>
+    <h1>Contact Me</h1>
+    <ul>
+        <li><a href="finalproject.html" >home</a></li>
+        <li><a href="favorites.html" >favorites</a></li>
+        <li><a href="family.html">family</a></li>
+        <li><a href="contactme.html" id="place">contact me</a></li>
+    </ul>
+    <form action="/action_page.php">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value="John"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value="Doe"><br>
+        <p>Please write what you want to share with us</p>
+        <textarea name="coments" cols="100" rows="10"> Enter your comments here...
+        </textarea>
+        <br>
+        <p>Please select your favorite hobbies: <br> 
+        <input type="radio" name="hobby" value="music">music <br>
+        <input type="radio" name="hobby" value="baking">baking <br>
+        <input type="radio" name="hobby" value="art">art <br>
+        <input type="radio" name="hobby" value="basketball">basketball <br>
+        <input type="radio" name="hobby" value="sleeping">sleeping <br>
+        <input type="radio" name="hobby" value="other">other
+        </p>
+        <input type="submit" value="Submit">
+        <p> Upload a video of your hobby:</p>
+        <input type="file" name="hobbyvideo"><br><br>
+        <input type="submit" value="Upload">
+      </form>
+</body>
+</html>
